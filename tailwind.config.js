@@ -13,12 +13,14 @@ module.exports = {
 				purple_c: '#210a52'
 			},
 			spacing: {
+				'44':'11rem',
 				'72': '18rem',
 				'84': '21rem',
 				'96': '24rem',
 				'128': '32rem',
+				'150': '37.5rem',
 				'200': '50rem',
-			  }
+			  },
 		}
 	},
 	variants: {},

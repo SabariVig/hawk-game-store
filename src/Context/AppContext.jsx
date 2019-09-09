@@ -53,8 +53,7 @@ export const AppProvider = (props) => {
 			},
 			languageSupport:
 				'Audio: English, French, Italian, German, Spanish, Japanese, Korean, Simplified Chinese - Text: Russian, Portuguese (Brazilian)'
-		},
-		{
+		},{
 			name: 'Control',
 			price: '$22.99',
 			url:"control",
