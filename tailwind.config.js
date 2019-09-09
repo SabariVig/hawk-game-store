@@ -13,7 +13,9 @@ module.exports = {
 				purple_c: '#210a52'
 			},
 			spacing: {
+				'28':'7rem',
 				'44':'11rem',
+				'48':'12rem',
 				'72': '18rem',
 				'84': '21rem',
 				'96': '24rem',
