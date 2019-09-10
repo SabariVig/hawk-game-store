@@ -23,7 +23,7 @@ export const AppProvider = (props) => {
 	])
 	const [ games, setGames ] = useState([
 		{
-			name: "Borderland's 3 - MAYHEM IS COMING",
+			name: "Borderlands 3",
 			price: '$44.99',
 			url:"borderland-3",
 			about: {
