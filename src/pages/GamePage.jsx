@@ -18,11 +18,9 @@ const GamePage = () => {
 					<div>
 						<img src='https://picsum.photos/id/449/1920/2800' alt="kshbhjsa" />
 					</div> */}
-						{games[0].pics.map(picId =>(<div>
-							<picture>
-							<source media="(min-width:1024px )"  sizes=""/>
+						{games[0].pics.map(picId =>(<div key={picId}>
 							<img className="image-gp" key={picId} src={`image/control-q-${picId}.jpg`} style={{height: "auto" ,width: "100%" }} alt="sdcdsc"/>
-							</picture>
+							
 						</div>))}
 						
 			
