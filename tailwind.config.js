@@ -11,7 +11,8 @@ module.exports = {
 				gray_c_t: '#5a5a5a',
 				background: '#121212',
 				purple_c: '#210a52',
-				gray_c_card: '#202020'
+				gray_c_card: '#202020',
+				gray_c_t_200:"#878787"
 			},
 			spacing: {
 				'28': '7rem',

@@ -26,6 +26,7 @@ export const AppProvider = (props) => {
 			name: "Borderlands 3",
 			price: '$44.99',
 			url:"borderland-3",
+			pics:[1,2,3,4,5,6,7],
 			about: {
 				developer: 'Gearbox Software',
 				publisher: '2K',
