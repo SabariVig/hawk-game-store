@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { AppContext } from './../Context/AppContext'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 const GamesGrid = () => {
 	const { games } = useContext(AppContext)
@@ -10,10 +10,8 @@ const GamesGrid = () => {
 		<div>
 			<div className='flex flex-wrap mt-8'>
 				<div className='w-full md:w-1/2 '>
-
 					<div className='mb-0 bg-gray_c_card'>
-<Link to={games[0].name}>
-	
+						<Link to={games[0].name}>
 							<div style={{ position: 'relative', left: 0, top: 0 }}>
 								<picture>
 									<source media='(min-width: 768px)' srcSet={`${url}${games[0].url}-t.jpg`} />
@@ -35,7 +33,7 @@ const GamesGrid = () => {
 									<span className='font-b'>{games[0].name}</span>
 									<div className='flex  content-end'>
 										<div className='w-2/3 w-full'>
-											<span className="text-gray_c_t_200 font-b">
+											<span className='text-gray_c_t_200 font-b'>
 												{games[0].about.publisher} | {games[0].about.developer}
 											</span>
 										</div>
@@ -45,7 +43,7 @@ const GamesGrid = () => {
 									</div>
 								</div>
 							</div>
-</Link>
+						</Link>
 					</div>
 				</div>
 				<div className='w-full md:w-1/2  '>
@@ -64,14 +62,14 @@ const GamesGrid = () => {
 											src={`${url}/${games[1].url}-l.png`}
 											alt='Logo'
 											style={{ position: 'absolute', top: '35%', left: '28%', width: '45%' }}
-											/>
+										/>
 									</div>
 									<div className='text-sm text-white p-2  '>
 										<div className=''>
 											<span className='font-b'>{games[1].name}</span>
 											<div className='flex  content-end'>
 												<div className='w-2/3 w-full'>
-													<span className="text-gray_c_t_200 font-b">
+													<span className='text-gray_c_t_200 font-b'>
 														{games[1].about.publisher} | {games[1].about.developer}
 													</span>
 												</div>
@@ -84,7 +82,7 @@ const GamesGrid = () => {
 								</Link>
 							</div>
 						</div>
-						
+
 						<div style={{ height: '50%' }} className='w-full'>
 							<div className='xs:m-0 md:m-5 xs:mt-3 md:mt-0 bg-gray_c_card'>
 								<Link to={games[2].name}>
@@ -106,7 +104,7 @@ const GamesGrid = () => {
 											<span className='font-b'>{games[2].name}</span>
 											<div className='flex content-end'>
 												<div className='w-2/3 w-full'>
-													<span className="text-gray_c_t_200 font-b">
+													<span className='text-gray_c_t_200 font-b'>
 														{games[2].about.publisher} | {games[2].about.developer}
 													</span>
 												</div>
