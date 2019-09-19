@@ -38,7 +38,7 @@ export const AppProvider = (props) => {
 				developer: 'Gearbox Software',
 				publisher: '2K',
 				releaseDate: 'Sep 13, 2019',
-				tags: [ 'Co-op', 'RPGFPS' ],
+				tags: 'Co-op, RPGFPS',
 				rating: 'MATURE 17+',
 				platform: 'Windows'
 			},
@@ -66,13 +66,28 @@ export const AppProvider = (props) => {
 			name: 'Control',
 			price: '$22.99',
 			url: 'control',
+			pics: [ 1, 2, 3, 4, 5, 6, 7 ],
+			description: {
+				short:
+					'After a secretive agency in New York is invaded by an otherworldly threat, you become the new Director struggling to regain Control.',
+				long:
+					['After a secretive agency in New York is invaded by an otherworldly threat, you become the new Director struggling to regain Control.',  'From developer Remedy Entertainment, this supernatural 3rd person action-adventure will challenge you to master the combination of supernatural abilities, modifiable loadouts and reactive environments while fighting through a deep and unpredictable world.', 'Control is Jesse Faden’s story and her personal search for answers as she grows into the role of the Director. The world of Control has its own story, as do the allies Jesse meets along the way. Jesse works with other Bureau agents and discovers strange experiments and secrets.']
+			},
+			social:{
+				instagram:"https://instagram.com",
+				discord:"https://discord.gg/control",
+				youtube:"https://youtube.com/u/RemedyGames",
+				twitter:"https://twitter.com/ControlRemedy"
+
+			},
+
 			about: {
 				developer: 'Remedy Entertainment',
 				publisher: '505 Games | Huya',
 				releaseDate: 'Aug 27, 2019',
-				tags: [ 'Action', 'Supernatural' ],
+				tags: 'Action , Supernatural' ,
 				rating: 'Mature 17+',
-				platform: 'Windows'
+				platform: ['Windows',"Mac"]
 			},
 			specification: {
 				minimum: {

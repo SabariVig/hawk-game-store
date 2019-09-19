@@ -6,6 +6,8 @@ const GamePageSearch = ({game}) => {
     console.log(game)
     return (
         <div>
+			<img className="sm:hidden h-28 max-h-full max-w-full mx-auto m-4" src={`image/${game.url}-l.png`} alt="saxxs"/>
+
             <div style={{ marginLeft: '16%', marginRight: '16%' }} className='mb-4 text-sm hidden lg:flex '>
 				<Link className='flex' to='/'>
 					<svg style={{ marginTop: 7 }} className='mr-1 item-center' width='5' height='9' fill='none'>

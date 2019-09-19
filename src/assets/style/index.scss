@@ -17,9 +17,8 @@ body {
 
 * {
 	outline: none;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
-
 
 input[type='search'] {
 	background-image: url('/search.svg');
@@ -89,7 +88,14 @@ input[type='search'] {
 // 	width:auto\9;
 // }
 
-.image-gp{
+.image-gp {
 	object-fit: contain;
-	text-align:center;
+	text-align: center;
+}
+.iconSoc:hover {
+	-moz-transform: translate(0px, -2px);
+	-ms-transform: translate(0px, -2px);
+	-o-transform: translate(0px, -2px);
+	-webkit-transform: translate(0px, -2px);
+	transform: translate(0px, -2px);
 }

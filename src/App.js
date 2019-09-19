@@ -10,7 +10,6 @@ function App() {
     <AppProvider>
         <Nav />
       <Switch>
-        {/* <Home /> */}
         <Route exact path="/game" component={GamePage} ></Route>
         <Route exact  path="/" component={Home}></Route>
         </Switch>
