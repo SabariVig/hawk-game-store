@@ -12736,6 +12736,13 @@ video {
   color: #fff;
 }
 
+.social-ic{
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 2rem;
+  margin-top: 3rem;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

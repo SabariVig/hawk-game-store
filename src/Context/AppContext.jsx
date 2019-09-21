@@ -43,24 +43,26 @@ export const AppProvider = (props) => {
 				platform: 'Windows'
 			},
 			specification: {
-				minimum: {
-					OS: 'Windows 7/10 (latest service pack)',
-					processor: 'AMD FX-8350 (Intel i5-3570)',
-					graphicCard: 'AMD Radeon™ HD 7970 (NVIDIA GeForce GTX 680 2GB)',
-					ram: '6 GB RAM',
-					storage: '75 GB'
+				recomended:false,
+				windows: {
+					OS: [ 'Windows 7/10 (latest service pack)', 'Windows 7/10 (latest service pack)', 'OS' ],
+					processor: [ 'AMD FX-8350 (Intel i5-3570)', 'AMD Ryzen™ 5 2600 (Intel i7-4770)', 'Processor' ],
+					graphicCard: [
+						'AMD Radeon™ HD 7970 (NVIDIA GeForce GTX 680 2GB)',
+						'AMD Radeon™ RX 590 (NVIDIA GeForce GTX 1060 6GB)',
+						'Graphic Card'
+					],
+					ram: [ '6 GB ', '16GB', 'RAM' ],
+					storage: [ '75 GB', '75 GB', 'Storage' ]
 				},
-				recomended: {
-					OS: 'Windows 7/10 (latest service pack)',
-					processor: 'AMD Ryzen™ 5 2600 (Intel i7-4770)',
-					graphicCard: 'AMD Radeon™ RX 590 (NVIDIA GeForce GTX 1060 6GB)',
-					ram: '16 GB',
-					storage: '75 GB'
+				mac:{
+					lol:"kdkns"
 				},
-				addiitionalFeature: ''
+				additionalFeature: 'weffffffff efcwevcwevwewev fffffff fffffff fffffffffffffffffweff fffffffffffffff ffffffff fffffffffffff fweffffff fffffffffffffff fffffffff ffeffffffffffffffffffffffffff ffffff',
+				languageSupport:
+					'Audio: English, French, Italian, German, Spanish, Japanese, Korean, Simplified Chinese - Text: Russian, Portuguese (Brazilian)'
+					
 			},
-			languageSupport:
-				'Audio: English, French, Italian, German, Spanish, Japanese, Korean, Simplified Chinese - Text: Russian, Portuguese (Brazilian)'
 		},
 		{
 			name: 'Control',
@@ -70,24 +72,26 @@ export const AppProvider = (props) => {
 			description: {
 				short:
 					'After a secretive agency in New York is invaded by an otherworldly threat, you become the new Director struggling to regain Control.',
-				long:
-					['After a secretive agency in New York is invaded by an otherworldly threat, you become the new Director struggling to regain Control.',  'From developer Remedy Entertainment, this supernatural 3rd person action-adventure will challenge you to master the combination of supernatural abilities, modifiable loadouts and reactive environments while fighting through a deep and unpredictable world.', 'Control is Jesse Faden’s story and her personal search for answers as she grows into the role of the Director. The world of Control has its own story, as do the allies Jesse meets along the way. Jesse works with other Bureau agents and discovers strange experiments and secrets.']
+				long: [
+					'After a secretive agency in New York is invaded by an otherworldly threat, you become the new Director struggling to regain Control.',
+					'From developer Remedy Entertainment, this supernatural 3rd person action-adventure will challenge you to master the combination of supernatural abilities, modifiable loadouts and reactive environments while fighting through a deep and unpredictable world.',
+					'Control is Jesse Faden’s story and her personal search for answers as she grows into the role of the Director. The world of Control has its own story, as do the allies Jesse meets along the way. Jesse works with other Bureau agents and discovers strange experiments and secrets.'
+				]
 			},
-			social:{
-				instagram:"https://instagram.com",
-				discord:"https://discord.gg/control",
-				youtube:"https://youtube.com/u/RemedyGames",
-				twitter:"https://twitter.com/ControlRemedy"
-
+			social: {
+				instagram: 'https://instagram.com',
+				discord: 'https://discord.gg/control',
+				youtube: 'https://youtube.com/u/RemedyGames',
+				twitter: 'https://twitter.com/ControlRemedy'
 			},
 
 			about: {
 				developer: 'Remedy Entertainment',
 				publisher: '505 Games | Huya',
 				releaseDate: 'Aug 27, 2019',
-				tags: 'Action , Supernatural' ,
+				tags: 'Action , Supernatural',
 				rating: 'Mature 17+',
-				platform: ['Windows',"Mac"]
+				platform: [ 'Windows', 'Mac' ]
 			},
 			specification: {
 				minimum: {

@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
-import GamePageFollow from './GamePageFollow'
 
 const GamePageMain = ({ game }) => {
-	const [ height_v, setHeight ] = useState(2000)
+	const [ height_v, setHeight ] = useState(600)
 	return (
-		<div className='container px-16  mt-4 h-full w-full  '>
+		<div className='  mt-4 h-full w-full  '>
 			<div style={{ height: height_v }} className='overflow-hidden'>
 				<div className='flex flex-wrap '>
-					<div style={{ fontSize: 20 }} className='w-full lg:w-1/4 fixed relative h-full  sticky'>
+					<div style={{ fontSize: 20 }} className='w-full lg:w-1/4 fixed relative h-full'>
 						About Game
 					</div>
 					<div style={{ fontSize: 16 }} className='w-full lg:w-3/4  h-full '>
@@ -96,17 +95,15 @@ const GamePageMain = ({ game }) => {
 							</div>
 						</div>
 					</div>
-					<div style={{ fontSize: 20 }} className='w-full lg:w-1/4 mt-8 h-full text-sm md:text-md '>
-						Follow Us
-					</div>
-					<div className='w-full lg:w-3/4  mt-8 h-32 bg-gray-300'>
-						<GamePageFollow  game={game}/>
-					</div>
 				</div>
 			</div>
-			<button className='w-full h-24 bg-red-600 overflow-visible' onClick={() => setHeight('100%')}>
-				Show More
-			</button>
+
+			<div className='flex flex-wrap'>
+				<div className='w-0 lg:w-1/4' />
+				<button className='w-full lg:w-3/4 h-24 bg-red-600 ' onClick={() => setHeight('100%')}>
+					Show More
+				</button>
+			</div>
 		</div>
 	)
 }

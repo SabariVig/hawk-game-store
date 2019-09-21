@@ -16,3 +16,7 @@
 .card-fg {
 	@apply flex h-8 uppercase text-sm font-b text-white;
 }
+
+.social-ic{
+	@apply h-6 w-6 ;
+}
