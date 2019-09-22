@@ -9,7 +9,7 @@ const GamesGrid = () => {
 	return (
 		<div>
 			<div className='flex flex-wrap mt-8'>
-				<div className='w-full md:w-1/2 '>
+				<div className='w-full md:w-1/2 mb-6 md:mb-0'>
 					<div className='mb-0 bg-gray_c_card'>
 						<Link to={games[0].name}>
 							<div style={{ position: 'relative', left: 0, top: 0 }}>
@@ -18,8 +18,10 @@ const GamesGrid = () => {
 									<img
 										src={`${url}${games[0].url}-f.jpg`}
 										alt='scd'
-										style={{ position: 'relative', top: 0, left: 0 }}
+										style={{ position: 'relative', top: 0, left: 0}}
+										
 										loading='lazy'
+										
 									/>
 								</picture>
 								<img
@@ -49,7 +51,7 @@ const GamesGrid = () => {
 				<div className='w-full md:w-1/2  '>
 					<div>
 						<div style={{ height: '50%' }} className='w-full  '>
-							<div className='xs:m-0 md:m-5 xs:mt-3 md:mt-0 bg-gray_c_card'>
+							<div className='xs:m-0 md:m-5 xs:mt-3 md:mt-0 bg-gray_c_card mb-6 md:mb-0'>
 								<Link to={games[1].name}>
 									<div className='relative top-0 left-0'>
 										<img
