@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { AppProvider } from "./Context/AppContext";
 import {Switch ,Route } from 'react-router-dom'
 import GamePage from './pages/GamePage';
+import GameRouter from './pages/GameRouter';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Nav />
       <Switch>
         <Route exact path="/game" component={GamePage} ></Route>
+        <Route exact path="/game/:gamename" component={GameRouter} ></Route>
         <Route exact  path="/" component={Home}></Route>
         </Switch>
     </AppProvider>

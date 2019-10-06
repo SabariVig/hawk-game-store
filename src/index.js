@@ -1,18 +1,15 @@
-import React from 'react';
+// import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 
-import App from './App';
+// import App from './App';
 
 import './assets/style/output.css';
 import './assets/style/index.scss';
 
 import * as serviceWorker from './serviceWorker';
+import ApolloProvider from './ApolloProvider'
 
-ReactDOM.render(
-	<BrowserRouter>
-		<App className="antialiased" />
-	</BrowserRouter>,
+ReactDOM.render(ApolloProvider,
 	document.getElementById('root')
 );
 

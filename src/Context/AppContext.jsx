@@ -1,8 +1,12 @@
-import React, { useState, createContext } from 'react'
+import React, 
+{ useState, createContext } from 'react'
+import { useQuery } from '@apollo/react-hooks'
+import gql from 'graphql-tag'
 
 export const AppContext = createContext()
 
 export const AppProvider = (props) => {
+
 	const [ freeGame, setFreegame ] = useState([
 		{
 			id: 1,
@@ -43,7 +47,7 @@ export const AppProvider = (props) => {
 				platform: 'Windows'
 			},
 			specification: {
-				recomended:false,
+				recomended: false,
 				windows: {
 					OS: [ 'Windows 7/10 (latest service pack)', 'Windows 7/10 (latest service pack)', 'OS' ],
 					processor: [ 'AMD FX-8350 (Intel i5-3570)', 'AMD Ryzen™ 5 2600 (Intel i7-4770)', 'Processor' ],
@@ -55,14 +59,14 @@ export const AppProvider = (props) => {
 					ram: [ '6 GB ', '16GB', 'RAM' ],
 					storage: [ '75 GB', '75 GB', 'Storage' ]
 				},
-				mac:{
-					lol:"kdkns"
+				mac: {
+					lol: 'kdkns'
 				},
-				additionalFeature: 'weffffffff efcwevcwevwewev fffffff fffffff fffffffffffffffffweff fffffffffffffff ffffffff fffffffffffff fweffffff fffffffffffffff fffffffff ffeffffffffffffffffffffffffff ffffff',
+				additionalFeature:
+					'weffffffff efcwevcwevwewev fffffff fffffff fffffffffffffffffweff fffffffffffffff ffffffff fffffffffffff fweffffff fffffffffffffff fffffffff ffeffffffffffffffffffffffffff ffffff',
 				languageSupport:
 					'Audio: English, French, Italian, German, Spanish, Japanese, Korean, Simplified Chinese - Text: Russian, Portuguese (Brazilian)'
-					
-			},
+			}
 		},
 		{
 			name: 'Control',
@@ -187,7 +191,30 @@ export const AppProvider = (props) => {
 				'Voice: English French German Spanish Text: Polish, Italian, Arabic, Russian, Portuguese, Korean, Traditional Chinese, Standard ChineseComing Autumn 2019: Japanese'
 		}
 	])
+
+	const {data}=useQuery(GETGAME)
+
+
+	
 	return (
-		<AppContext.Provider value={{ freeGame, setFreegame, games, setGames }}>{props.children}</AppContext.Provider>
+		<AppContext.Provider value={{ freeGame, setFreegame, games, setGames,gamedata:data,}}>{props.children}</AppContext.Provider>
 	)
+
+
+
 }
+
+const GETGAME = gql`
+	query lol {
+		getGames {
+			name
+			price
+			url
+			about {
+				publisher
+				developer
+			}
+		}
+	}
+`
+
