@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 const GamesGrid = ({games}) => {
+	if(!games) return 'loading..'
 	const url = 'image/'
 	return (
 		

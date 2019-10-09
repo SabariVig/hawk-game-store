@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import React,{ useState} from 'react'
 import GamesGrid from './GamesGrid'
 import { useQuery } from '@apollo/react-hooks'
 import gql from 'graphql-tag'
@@ -50,6 +50,7 @@ const GameServe = () => {
 				
             </InfiniteScroll>}
 
+			{/* {game.map(getGame=>(<GamesGrid games={getGame} />))} */}
 
 		</div>
 	)
