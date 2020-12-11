@@ -1,5 +1,8 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../Context/AppContext'
+import { Link } from 'react-router-dom'
+
+
 const FreeGame = () => {
 	const { freeGame } = useContext(AppContext)
 	// console.log(freeGame);
