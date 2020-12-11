@@ -9,13 +9,6 @@ const GameServe = () => {
 	const [skip,setSkip]=useState(0)
 	const { data, fetchMore, loading } = useQuery(GETGAME, { variables: { skip } })
 	const  size = useQuery(GETSIZE)
-	
-	// if (loading) return 'loading.....'
-	// console.log(data)
-	if(!loading)
-	game.push(data.getGamesPage)
-	console.log(skip)
-
 
 	
 	// console.log(!((size.data.getGamesSize-(skip+3))<2))
