@@ -10,9 +10,9 @@ export const AppProvider = (props) => {
 	const [ freeGame, setFreegame ] = useState([
 		{
 			id: 1,
-			name: 'The End Is Nigh & Abuz',
+			name: 'Control',
 			validTill: 'Free Now-Sep 12',
-			url: 'free-game-c.jpg',
+			url: 'control-f.jpg',
 			available: 'Free Now',
 			theme: 'primary'
 		},
