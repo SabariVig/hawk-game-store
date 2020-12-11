@@ -18,6 +18,7 @@ const FreeGame = () => {
 
 					{freeGame.map((game) => (
 						<div key={game.id} className='w-full md:w-1/3 sm:1/2 '>
+  							<Link to="/game">
 							<div className='m-4  tracking-wide'>
 								<img
 									className='opacity-75 hover:opacity-100'
@@ -32,6 +33,9 @@ const FreeGame = () => {
 									<h1 className='font-s text-purple-600'>{game.validTill}</h1>
 								</div>
 							</div>
+								
+
+ 						 </Link>
 						</div>
 					))}
 				</div>
