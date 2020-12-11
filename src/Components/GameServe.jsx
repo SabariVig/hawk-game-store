@@ -7,7 +7,7 @@ import InfiniteScroll from 'react-infinite-scroller';
 const game=[]
 const GameServe = () => {
 	const [skip,setSkip]=useState(0)
-	const { data, fetchMore, loading } = useQuery(GETGAME, { variables: { skip } })
+	const {  fetchMore } = useQuery(GETGAME, { variables: { skip } })
 	const  size = useQuery(GETSIZE)
 
 	
