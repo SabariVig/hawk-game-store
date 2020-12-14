@@ -18,7 +18,7 @@ export const AppProvider = (props) => {
 		},
 		{
 			id: 2,
-			name: 'Cornatium',
+			name: 'Borderlands 3',
 			validTill: 'Free Sep 12 -Sep 19',
 			url: 'borderland-3',
 			available: 'Comming Soon',
