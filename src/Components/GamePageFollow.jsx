@@ -3,7 +3,9 @@ import React from 'react'
 
 const GamePageFollow = ({ game }) => {
 	return (
-		<div className='flex flex-wrap'>
+		 <div className='flex flex-wrap'>
+			 {game.social &&
+			 <>
 			<div style={{ fontSize: 20 }} className='w-full lg:w-1/4 mt-8 h-full text-sm md:text-md '>
 				Follow Us
 			</div>
@@ -82,9 +84,9 @@ const GamePageFollow = ({ game }) => {
 						) : null}
 					</div>
 				</div>
-			</div>
+			</div></>}
 		</div>
-	)
+								)
 }
 
 export default GamePageFollow

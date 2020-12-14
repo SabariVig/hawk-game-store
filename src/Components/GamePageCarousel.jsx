@@ -10,7 +10,7 @@ const GamePageCarousel = ({game}) => {
 							<img
 								className='image-gp'
 								key={picId}
-								src={`image/control-q-${picId}.jpg`}
+								src={`/image/${game.url}-q-${picId}.jpg`}
 								style={{ height: 'auto', width: '100%' }}
 								alt='sdcdsc'
 							/>

@@ -11,8 +11,8 @@ function App() {
     <AppProvider>
         <Nav />
       <Switch>
-        <Route exact path="/game" component={GamePage} ></Route>
-        <Route exact path="/game/:gamename" component={GameRouter} ></Route>
+        <Route exact path="/game/:gamename" component={GamePage} ></Route>
+        <Route exact path="/g" component={GameRouter} ></Route>
         <Route exact  path="/" component={Home}></Route>
         </Switch>
     </AppProvider>
