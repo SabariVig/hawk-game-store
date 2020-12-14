@@ -6,7 +6,7 @@ const [ games, setGames ] = useState([
         name: 'Borderlands 3',
         price: '$44.99',
         url: 'borderland-3',
-        pics: [ 1, 2, 3, 4, 5, 6, 7 ],
+        pics: [ 1, 2, 3 ],
         description: {
             short:
                 'After a secretive agency in New York is invaded by an otherworldly threat, you become the new Director struggling to regain Control.',
@@ -100,7 +100,7 @@ specification: {
     {
         name: 'WRC 8 FIA World Rally Championship',
         price: '$18.99',
-        pics: [ 1, 2, 3, 4, 5, 6, 7 ],
+        pics: [ 1, 2, 3],
         url: 'WRC8',
         about: {
             developer: 'KT Racing',
@@ -186,7 +186,7 @@ specification: {
             'Voice: English French German Spanish Text: Polish, Italian, Arabic, Russian, Portuguese, Korean, Traditional Chinese, Standard ChineseComing Autumn 2019: Japanese'
     }
 ])
-return games
+return {games,setGames}
 }
 
 export default useGameStore

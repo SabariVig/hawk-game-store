@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import '../assets/style/carousel.css'
-import { AppContext } from './../Context/AppContext'
 import GamePageSearch from '../Components/GamePageSearch'
 import GamePageCarousel from './../Components/GamePageCarousel'
 import GamePageDescription from './../Components/GamePageDescription'
@@ -11,7 +10,7 @@ import useGameStore from '../Context/GameStore'
 
 const GamePage = ({ match: { params } }) => {
 	console.log(params)
-	const gameList = useGameStore()
+	const {games:gameList} = useGameStore()
 	let games = gameList.filter(game=> game.url === params.gamename)
 	games = games[0]
 	console.log(games)

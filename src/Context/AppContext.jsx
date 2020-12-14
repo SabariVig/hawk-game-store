@@ -12,7 +12,7 @@ export const AppProvider = (props) => {
 			id: 1,
 			name: 'Control',
 			validTill: 'Free Now-Sep 12',
-			url: 'control-f.jpg',
+			url: 'control',
 			available: 'Free Now',
 			theme: 'primary'
 		},
@@ -20,7 +20,7 @@ export const AppProvider = (props) => {
 			id: 2,
 			name: 'Cornatium',
 			validTill: 'Free Sep 12 -Sep 19',
-			url: 'free-game-f.jpg',
+			url: 'borderland-3',
 			available: 'Comming Soon',
 			theme: 'black'
 		}

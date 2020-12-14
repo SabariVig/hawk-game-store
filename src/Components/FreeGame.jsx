@@ -21,11 +21,11 @@ const FreeGame = () => {
 
 					{freeGame.map((game) => (
 						<div key={game.id} className='w-full md:w-1/3 sm:1/2 '>
-  							<Link to="/game">
+  							<Link to={`/game/${game.url}`}>
 							<div className='m-4  tracking-wide'>
 								<img
 									className='opacity-75 hover:opacity-100'
-									src={`${url}${game.url}`}
+									src={`${url}${game.url}-f.jpg`}
 									alt='Free Game 1'
 								/>
 								<div className={`card-fg bg-${game.theme} `}>

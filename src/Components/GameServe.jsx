@@ -3,8 +3,8 @@ import useGameStore from '../Context/GameStore'
 import GamesGrid from './GamesGrid'
 
 const GameServe = () => {
-const game = useGameStore()	
-console.log(game[0].url)
+const {games: game} = useGameStore()	
+console.log(game)
 	return (
 		<div>
 			{game && <GamesGrid games={game} />}
