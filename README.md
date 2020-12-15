@@ -1,7 +1,7 @@
 # Online Game Store
 
 
-## [Demo](https://gamestore.lzx.io)
+## [Demo](https://gamestore.lxz.io)
 limited exprience as state is loaded from localcache instead of backend serve
 
 ## [Backend Code](https://github.com/Sabarivig/game-store-backend)
