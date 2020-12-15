@@ -14,7 +14,7 @@ limited exprience as state is loaded from localcache instead of backend serve
 
 
 
-### To Instatl
+### To Install
 To Run Development Build 
 
 ```yarn start```
