@@ -4,7 +4,11 @@
 ## [Demo](https://gamestore.lzx.io)
 ## [Backend Code](https://github.com/Sabarivig/game-store-backend)
 
-:::image type="content" source="static/screenshot.png" alt-text="image":::
+
+![Front Page](static/screenshot.png?raw=true "Front Page")
+![Game Store](static/screenshot-gamepage.png?raw=true "Front Page")
+
+
 
 
 ### To Instatll 
