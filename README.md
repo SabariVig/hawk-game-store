@@ -1,4 +1,4 @@
-# Hawk Game Store
+# Online Game Store
 
 
 ## [Demo](https://gamestore.lzx.io)
@@ -11,7 +11,7 @@
 
 
 
-### To Instatll 
+### To Instatl
 To Run Development Build 
 
 ```yarn start```
